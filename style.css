@@ -161,19 +161,7 @@ body {
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-  .mu-main-navbar .mu-main-nav .dropdown-menu { /*네비바 드롭다운 메뉴 색*/
-    background-color: skyblue;
-    border-radius: 0;
-  }
-
-  .mu-main-navbar .mu-main-nav li a:hover, .mu-main-navbar .mu-main-nav li a:focus { /*포커스 됐을 때 글씨색*/
-    color: pink;
-}
   
-
-  .mu-main-navbar .mu-main-nav .dropdown-menu li a {
-    padding: 10px 20px;
-  }
   .mu-main-navbar .navbar-header .navbar-brand {
     padding: 0;
     margin-top: 8px;
@@ -201,7 +189,6 @@ body {
   }
   
   .navbar-bg { /*아래로 내려가는 네비바 색*/
-    background-color: #283B42;
     padding: 10px 0;
   }
   
@@ -528,73 +515,6 @@ body {
     width: 100px;
   }
   
-  /*==================
-   COUNTER SECTION
-  ====================*/
-  #mu-counter {
-    background-attachment: fixed;
-    background-image: url("assets/img/counter-bg.jpg");
-    background-size: cover;
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-counter .mu-counter-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    display: inline;
-    padding: 100px 0;
-    float: left;
-    width: 100%;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area {
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav {
-    display: inline-block;
-    width: 100%;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
-    display: inline-block;
-    border-right: 1px solid #ccc;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li:last-child {
-    border-right: none;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter {
-    color: #fff;
-    display: inline;
-    float: left;
-    text-align: center;
-    width: 100%;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter span {
-    font-family: "Tangerine", cursive;
-    font-size: 40px;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter h3 {
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 40px;
-    margin-bottom: 15px;
-    margin-top: 0;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter h3 span {
-    font-family: "Open Sans", sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 40px;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter h3 sup {
-    font-weight: normal;
-    display: inline-block;
-    font-size: 35px;
-  }
-  #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter p {
-    font-size: 18px;
-    letter-spacing: 1.5px;
-  }
   
   /*==================
   위치검색 SECTION
@@ -641,170 +561,7 @@ body {
     text-align: center;
   }
   
-  
-  /*==================
-    아직보류 SECTION
-  ====================*/
-  #mu-client-testimonial {
-    background-image: url("assets/img/testimonial-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    display: inline;
-    float: left;
-    padding: 70px 0 100px;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-overlay .mu-title h2 {
-    color: #fff;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area {
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content {
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider {
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li {
-    display: inline;
-    float: left;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
-    display: inline;
-    float: left;
-    padding: 0 150px;
-    position: relative;
-    width: 100%;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info {
-    display: inline;
-    float: left;
-    width: 100%;
-    text-align: center;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p {
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    line-height: 35px;
-    margin-top: 30px;
-    padding: 0;
-    position: relative;
-    z-index: 20;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p:before {
-    content: '\f10e';
-    font-family: fontAwesome;
-    font-size: 50px;
-    left: 1%;
-    position: absolute;
-    text-align: center;
-    top: 20%;
-    opacity: 0.6;
-    width: 100%;
-    z-index: -10;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-bio {
-    color: #fff;
-    display: inline-block;
-    float: left;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    z-index: 30;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-bio p {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    min-width: 175px;
-    padding-top: 10px;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots {
-    text-align: center;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots li {
-    border-radius: 50%;
-    width: 20px;
-    display: inline-block;
-    float: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider .slick-dots li button {
-    display: none;
-  }
-  
-  /*==================
-    SUBSCRIPTION SECTION
-  ====================*/
-  #mu-subscription {
-    display: inline;
-    float: left;
-    padding: 50px 0;
-    width: 100%;
-  }
-  #mu-subscription .mu-subscription-area {
-    display: inline;
-    float: left;
-    padding: 0 180px;
-    width: 100%;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"] {
-    border: medium none;
-    color: #000;
-    float: left;
-    font-size: 16px;
-    height: 54px;
-    margin-right: 20px;
-    letter-spacing: 1px;
-    padding: 10px;
-    width: 75%;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"]::-webkit-input-placeholder {
-    color: #555;
-    opacity: 1;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"]:-moz-placeholder {
-    color: #555;
-    opacity: 1;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"]::-moz-placeholder {
-    color: #555;
-    opacity: 1;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"]:-ms-input-placeholder {
-    color: #555;
-    opacity: 1;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form button[type="submit"] {
-    border: none;
-  }
-  #mu-subscription .mu-subscription-area .mu-subscription-form button[type="submit"]:hover {
-    background-color: #FFF;
-  }
+
   
  
   /*==================
@@ -932,18 +689,7 @@ body {
     #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
       padding-top: 32.3%;
     }
-  
-    #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
-      padding: 0 60px;
-    }
-  
-    #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p::before {
-      top: 40%;
-    }
-  
-    #mu-latest-news .mu-latest-news-area .mu-latest-news-content .mu-news-single {
-      margin-top: 25px;
-    }
+
   
     #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter p {
       font-size: 15px;
@@ -1100,9 +846,6 @@ body {
       margin-bottom: 0;
     }
   
-    #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single {
-      padding: 0;
-    }
   
     #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"] {
       width: 100%;
@@ -1195,22 +938,7 @@ body {
     .mu-title h2 {
       font-size: 28px;
     }
-  
-    #mu-client-testimonial .mu-client-testimonial-area .mu-testimonial-content .mu-testimonial-slider li .mu-testimonial-single .mu-testimonial-info p {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  
-    #mu-latest-news .mu-latest-news-area .mu-latest-news-content .mu-news-single h3 {
-      line-height: 24px;
-      margin-bottom: 20px;
-      padding: 0 5px;
-      font-size: 18px;
-    }
-  
-    #mu-latest-news .mu-latest-news-area .mu-latest-news-content .mu-news-single .mu-news-single-content .mu-meta-nav li {
-      padding: 0 5px;
-    }
+
   
     #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
       text-align: center;
