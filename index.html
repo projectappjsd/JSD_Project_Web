@@ -216,7 +216,8 @@
       <h2>위치 검색</h2>
     </div>
     <div class="mu-reservation-content">
-      <p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p>
+      <p onclick="showPopup()" onmouseover="this.style.color='#ffd400'; this.style.cursor='pointer'" onmouseout="this.style.color='white';">
+      위치 검색할 수 있는 팝업 창을 열까욥 ?!</p>
     </div>
 
   </section>
@@ -334,6 +335,12 @@
   <!-- Layer PopUp js -->
   <script src="assets/js/layerpopup.js"></script>
 
+  <!-- PopUp -->
+  <script>
+    function showPopup() {
+      window.open("popUp.html", "search", "width=500, height=400, left=100, top=50");
+    }
+  </script>
 </body>
 
 </html>
