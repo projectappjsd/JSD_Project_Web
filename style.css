@@ -182,8 +182,8 @@ body {
     margin-top: 16px;
     width: 105px;
   }
-  
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { /*선택된 메뉴바 색*/
+    
+  .mu-main-navbar .mu-main-nav li a:hover {  /*선택된 메뉴바 색*/
     background-color: #FFF;
     color: skyblue;
   }

@@ -20,7 +20,10 @@
     <link id="switcher" href="assets/css/theme-color/blue-theme.css" rel="stylesheet">     
 
     <!-- Main style sheet -->
-    <link href="style.css" rel="stylesheet">    
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Layer PopUp sheet -->
+    <link href="assets/css/layer.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>        
@@ -30,12 +33,13 @@
   </head>
 
   <body>  
-  <!-- Pre Loader - 지금 병아리 사진임 (사진 수정 필요 ) -->
+  <!-- Pre Loader - 지금 병아리 사진임 (사진 수정 필요 )
   <div id="aa-preloader-area">
     <div class="mu-preloader">
       <img src="assets/img/preloader.gif" alt="loading">
     </div>
   </div>
+  -->
 
   <!--START SCROLL TOP BUTTON ( 사진 수정 필요 ) -->
     <a class="scrollToTop" href="#">
@@ -66,7 +70,7 @@
             <li><a href="#mu-restaurant-menu">앱 소개</a></li>                       
             <li><a href="#mu-reservation">위치 검색</a></li>                       
             <li><a href="#mu-gallery">제보</a></li>   
-          </ul>                            
+          </ul>
         </div>      
       </div>          
     </nav> 
@@ -209,10 +213,30 @@
 
   <section id="mu-gallery">
       <div class="mu-title-speak" >
-          <h2>제보</h2>  
+          <h2>제보</h2>
       </div>
       <div class="mu-speak-content">
-            <p>제보할 수 있는 팝업 창을 열까욥 ?!</p>    
+        <a href="#layer2" class="btn-example">제보할 수 있는 팝업 창을 열까욥 ?!</a>
+        <div class="dim-layer">
+            <div class="dimBg"></div>
+            <div id="layer2" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <p class="ctxt mb20">제보해주세용<br>
+                            이거슨 제보창의 팝업레이어<br>
+                            많은 제보 부탁드려여 쓸모없는 말 ㄴㄴ<br>
+                            JSD의 작품임니당
+                        </p>
+
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose">Close</a>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     
   </section>
@@ -261,6 +285,9 @@
 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
+
+  <!-- Layer PopUp js -->
+  <script src="assets/js/layerpopup.js"></script>
 
   </body>
 </html>
