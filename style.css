@@ -18,6 +18,8 @@ body {
   .no-padding {
     padding: 0;
   }
+
+
   
   /* MODULES - Individual site components */
   ul {
@@ -249,6 +251,34 @@ body {
     top: 45%;
   }
   
+  /*==================
+      LAYER POPUP
+  ====================*/
+
+  #layer_imformation {
+    color: #000;
+    font-size: 12px;
+  }
+
+  #layer_email {
+    color: #000;
+  }
+
+  #layer_add {
+    color: #000;
+  }
+
+  #addarea {
+    width: 80%;
+    height: 40%;
+  }
+
+  #submitarea{
+    background-color: pink;
+  }
+
+
+
   /*==================
       SLIDER SECTION
   ====================*/
