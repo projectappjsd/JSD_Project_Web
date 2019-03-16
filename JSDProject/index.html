@@ -216,8 +216,7 @@
       <h2>위치 검색</h2>
     </div>
     <div class="mu-reservation-content">
-      <p onclick="showPopup()" onmouseover="this.style.color='#ffd400'; this.style.cursor='pointer'" onmouseout="this.style.color='white';">
-      위치 검색할 수 있는 팝업 창을 열까욥 ?!</p>
+      <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=400,height=400,toolbars=no,scrollbars=no'); return false;"><p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p></a>
     </div>
 
   </section>
@@ -270,12 +269,6 @@
                     <input type="submit" id="submitarea" value="Submit">
                     <a href="#" class="btn-layerClose">Close</a>
                   </div>
-
-                  <!-- <div class="layer_submit">
-                    <input type="submit" id="submitarea" value="Submit">
-                  </div> -->
-
-
 
               </form>
               <!--// content-->
@@ -335,12 +328,6 @@
   <!-- Layer PopUp js -->
   <script src="assets/js/layerpopup.js"></script>
 
-  <!-- PopUp -->
-  <script>
-    function showPopup() {
-      window.open("popUp.html", "search", "width=400, height=300, left=200, top=50");
-    }
-  </script>
 </body>
 
 </html>
