@@ -54,82 +54,12 @@ body {
     border: none;
   }
   
-  .mu-readmore-btn {
-    background-color: #fff;
-    font-family: "Open Sans", sans-serif;
-    display: inline-block;
-    font-size: 16px;
-    padding: 15px 35px;
-    position: relative;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .mu-readmore-btn::after {
-    bottom: 5px;
-    content: "";
-    left: 5px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-  .mu-readmore-btn:hover, .mu-readmore-btn:focus {
-    color: #fff;
-  }
-  .mu-readmore-btn:hover::after, .mu-readmore-btn:focus::after {
-    bottom: 0px;
-    content: "";
-    left: 0px;
-    right: 0px;
-    top: 0px;
-  }
-  
-  .mu-browsmore-btn {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-    padding: 12px 25px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .mu-browsmore-btn:hover, .mu-browsmore-btn:focus {
-    color: #fff;
-  }
-  
-  .mu-send-btn {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    display: inline-block;
-    font-size: 16px;
-    padding: 10px 18px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .mu-send-btn:hover, .mu-send-btn:focus {
-    color: #fff;
-  }
   
   /* LAYOUTS - Page layout styles */
   /*==================
    HEADER SECTION
   ====================*/
-  #mu-header {
+  #header {
     left: 0;
     right: 0;
     top: 0;
@@ -282,29 +212,29 @@ body {
   /*==================
       SLIDER SECTION
   ====================*/
-  #mu-slider {
+  #slider {
     display: inline;
     float: left;
     width: 100%;
     position: relative;
   }
-  #mu-slider .mu-slider-area {
+  #slider .slider-area {
     display: inline;
     float: left;
     width: 100%;
   }
-  #mu-slider .mu-slider-area .mu-top-slider {
+  #slider .slider-area .mu-top-slider {
     display: inline;
     float: left;
     width: 100%;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single {
     display: inline;
     float: left;
     position: relative;
     width: 100%;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single:after {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single:after {
     background-color: rgba(0, 0, 0, 0.6);
     bottom: 0;
     content: "";
@@ -314,10 +244,10 @@ body {
     top: 0;
     z-index: 9;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single img {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single img {
     width: 100%;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
     position: absolute;
     left: 15%;
     top: 33%;
@@ -325,34 +255,34 @@ body {
     text-align: center;
     z-index: 99;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .slider-small-title {
     font-family: "Tangerine", cursive;
     font-size: 100px;
     font-weight: 400;
     line-height: 40px;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .slider-title {
     color: #fff;
     font-size: 70px;
     line-height: 90px;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
+  #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
     color: #fff;
     font-size: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
     padding: 0 30px;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev::before {
+  #slider .slider-area .mu-top-slider .slick-prev::before {
     content: "\f177";
     font-family: fontAwesome;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next::before {
+  #slider .slider-area .mu-top-slider .slick-next::before {
     content: "\f178";
     font-family: fontAwesome;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next {
+  #slider .slider-area .mu-top-slider .slick-prev,
+  #slider .slider-area .mu-top-slider .slick-next {
     background-color: transparent;
     border: 2px solid #888;
     height: 60px;
@@ -364,72 +294,76 @@ body {
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev::before,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next::before {
+  #slider .slider-area .mu-top-slider .slick-prev::before,
+  #slider .slider-area .mu-top-slider .slick-next::before {
     color: #888;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev:hover, #mu-slider .mu-slider-area .mu-top-slider .slick-prev:focus,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next:hover,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next:focus {
+  #slider .slider-area .mu-top-slider .slick-prev:hover, #slider .slider-area .mu-top-slider .slick-prev:focus,
+  #slider .slider-area .mu-top-slider .slick-next:hover,
+  #slider .slider-area .mu-top-slider .slick-next:focus {
     color: #fff;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev:hover::before, #mu-slider .mu-slider-area .mu-top-slider .slick-prev:focus::before,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next:hover::before,
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next:focus::before {
+  #slider .slider-area .mu-top-slider .slick-prev:hover::before, #slider .slider-area .mu-top-slider .slick-prev:focus::before,
+  #slider .slider-area .mu-top-slider .slick-next:hover::before,
+  #slider .slider-area .mu-top-slider .slick-next:focus::before {
     color: #fff;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-prev {
+  #slider .slider-area .mu-top-slider .slick-prev {
     left: 20px;
   }
-  #mu-slider .mu-slider-area .mu-top-slider .slick-next {
+  #slider .slider-area .mu-top-slider .slick-next {
     right: 20px;
   }
   
-  /*==================
+
+
+ /*==================
       쉼터소개 SECTION
   ====================*/
-  #mu-about-us {
+  #rest-intro {
     display: inline;
     float: left;
     width: 100%;
     padding: 100px 0;
   }
-  #mu-about-us .mu-about-us-area {
+  #rest-intro .rest-intro-area {
     display: inline;
     float: left;
     width: 100%;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-left {
+  #rest-intro .rest-intro-area .rest-intro-left {
     display: inline;
     float: left;
     margin-top: 20px;
     padding-top: 30px;
     width: 100%;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-left p {
+  #rest-intro .rest-intro-area .rest-intro-left p {
     line-height: 24px;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-left ul {
+  #rest-intro .rest-intro-area .rest-intro-left ul {
     margin-bottom: 20px;
     padding-left: 20px;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-left ul li {
+  #rest-intro .rest-intro-area .rest-intro-left ul li {
     line-height: 24px;
     margin-bottom: 10px;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-left ul li:before {
+  #rest-intro .rest-intro-area .rest-intro-left ul li:before {
     content: "\f24d";
     font-family: fontAwesome;
     margin-right: 10px;
   }
-  #mu-about-us .mu-about-us-area .mu-about-us-right {
+  #rest-intro .rest-intro-area .rest-intro-right {
     display: inline;
     float: left;
     margin-top: 20px;
     padding-top: 30px;
     width: 100%;
   }
-  .mu-title {
+
+
+  .title {
     display: inline;
     float: left;
     width: 100%;
@@ -437,18 +371,18 @@ body {
     text-align: center;
   }
  
-  .mu-title h2 {
+  .title h2 {
     color: #000;
     font-size: 35px;
     margin-bottom: 5px;
   }
-  .mu-title i {
+  .title i {
     font-size: 18px;
   }
-  .mu-title .mu-title-bar {
+  .title .title-bar {
     position: relative;
   }
-  .mu-title .mu-title-bar::before {
+  .title .title-bar::before {
     content: "";
     height: 2px;
     left: 8px;
@@ -456,7 +390,7 @@ body {
     top: 10px;
     width: 100px;
   }
-  .mu-title .mu-title-bar::after {
+  .title .title-bar::after {
     content: "";
     height: 2px;
     right: 15px;
@@ -465,51 +399,56 @@ body {
     width: 100px;
   }
 
+
   /*==================
       앱 소개 SECTION
   ====================*/
-  #mu-restaurant-menu {
+  #app-intro {
     display: inline;
     float: left;
     width: 100%;
     padding: 100px 0;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area {
+  #app-intro .app-intro-area {
     display: inline;
     float: left;
     width: 100%;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-left {
+  #app-intro .app-intro-area .app-intro-left {
     display: inline;
     float: left;
     margin-top: 20px;
     padding-top: 30px;
     width: 100%;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-left p {
+  #app-intro .app-intro-area .app-intro-left p {
     line-height: 24px;
   }
-  #restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-left ul {
+  #app-intro .app-intro-area .app-intro-left ul {
     margin-bottom: 20px;
     padding-left: 20px;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-left ul li {
+  #app-intro .app-intro-area .app-intro-left ul li {
     line-height: 24px;
     margin-bottom: 10px;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-left ul li:before {
+  #app-intro .app-intro-area .app-intro-left ul li:before {
     content: "\f24d";
     font-family: fontAwesome;
     margin-right: 10px;
   }
-  #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-right {
+  #app-intro .app-intro-area .app-intro-right {
     display: inline;
     float: left;
     margin-top: 20px;
     padding-top: 30px;
     width: 100%;
   }
-  .mu-title {
+
+
+
+
+  .title {
     display: inline;
     float: left;
     width: 100%;
@@ -517,18 +456,18 @@ body {
     text-align: center;
   }
  
-  .mu-title h2 {
+  .title h2 {
     color: #000;
     font-size: 35px;
     margin-bottom: 5px;
   }
-  .mu-title i {
+  .title i {
     font-size: 18px;
   }
-  .mu-title .mu-title-bar {
+  .title .title-bar {
     position: relative;
   }
-  .mu-title .mu-title-bar::before {
+  .title .title-bar::before {
     content: "";
     height: 2px;
     left: 8px;
@@ -536,7 +475,7 @@ body {
     top: 10px;
     width: 100px;
   }
-  .mu-title .mu-title-bar::after {
+  .title .title-bar::after {
     content: "";
     height: 2px;
     right: 15px;
@@ -544,12 +483,14 @@ body {
     top: 10px;
     width: 100px;
   }
+
+
   
   
   /*==================
   위치검색 SECTION
   ====================*/
-  #mu-reservation {
+  #find-location {
     background-color: pink;
     display: inline;
     float: left;
@@ -558,42 +499,41 @@ body {
     
   }
 
-  #mu-reservation .mu-title-location h2{
-      color: #fff;
-      text-align: center;
-  }
-
-  #mu-reservation .mu-reservation-content{
+  #find-location .title-location h2{
     color: #fff;
     text-align: center;
+}
+
+  #find-location .find-location-content{
+    color: #fff;
+   text-align: center;
   }
 
 
-   /*==================
-  제보 SECTION
-  ====================*/
-  #mu-gallery {
-    background-color: gold;
-    display: inline;
-    float: left;
-    padding: 300px 0;
-    width: 100%;
-    
-  }
+ /*==================
+제보 SECTION
+====================*/
+#report {
+  background-color: gold;
+  display: inline;
+  float: left;
+  padding: 300px 0;
+  width: 100%;
+  
+}
 
-  #mu-gallery .mu-title-speak h2{
-      color: #fff;
-      text-align: center;
-  }
+#report .title-speak h2{
+    color: #fff;
+    text-align: center;
+}
 
-  #mu-gallery .mu-speak-content{
+
+  #report .mu-speak-content{
     color: #fff;
     text-align: center;
   }
   
 
-  
- 
   /*==================
    FOOTER SECTION
   ====================*/
@@ -660,21 +600,11 @@ body {
       padding-right: 10px;
     }
   
-    #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single img {
+    #slider .slider-area .mu-top-slider .mu-top-slider-single img {
       width: auto;
     }
-  
-    #mu-subscription .mu-subscription-area {
-      padding: 0 50px;
-    }
-  
-    #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social {
-      padding: 23px 10px;
-    }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      min-height: 300px;
-    }
+
+
   }
   @media (max-width: 991px) {
     .mu-main-navbar .mu-main-nav li a {
@@ -699,44 +629,12 @@ body {
       width: 100%;
     }
   
-    #mu-subscription .mu-subscription-area {
-      padding: 0 5%;
-    }
-  
-    #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"] {
-      width: 70%;
-    }
-  
     #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
       margin-top: 50px;
       padding: 0;
     }
   
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-img {
-      height: 200px;
-    }
-  
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
-      padding-top: 32.3%;
-    }
 
-  
-    #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li .mu-single-counter p {
-      font-size: 15px;
-    }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      min-height: 250px;
-    }
-  
-    #mu-error .mu-error-area p {
-      padding: 0 30px;
-    }
-  
-    #mu-error .mu-error-area {
-      margin-top: 0;
-      padding: 50px 100px 80px;
-    }
   }
   @media (max-width: 767px) {
     .navbar-default .navbar-toggle {
@@ -756,24 +654,9 @@ body {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
       background-color: #fff;
     }
+
   
-    #mu-counter .mu-counter-overlay .mu-counter-area .mu-counter-nav li {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border-right: none;
-    }
   
-    #mu-blog-banner .mu-blog-banner-area {
-      min-height: 275px;
-    }
-  
-    #mu-blog .mu-blog-area .mu-blog-sidebar {
-      margin-top: 50px;
-    }
-  
-    #mu-blog .mu-blog-area .mu-blog-sidebar .mu-blog-sidebar-single .mu-sidebar-add img {
-      width: 100%;
-    }
   }
   @media (max-width: 640px) {
     .navbar-default .navbar-toggle {
@@ -785,7 +668,7 @@ body {
       background-color: #fff;
     }
   
-    #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+    #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .slider-title {
       font-size: 50px;
       line-height: 75px;
     }
@@ -799,171 +682,93 @@ body {
       font-size: 18px;
     }
   
-    #mu-reservation .mu-reservation-area .mu-reservation-content {
+    #find-location .find-location-area .find-location-content {
       padding: 0 50px;
     }
   
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
+    #app-intro .app-intro-area .app-intro-content .app-intro li a {
       font-size: 16px;
       margin: 0 5px;
     }
+
   
-    #mu-reservation .mu-reservation-area .mu-reservation-content p {
+    #find-location .find-location-area .find-location-content p {
       padding: 0;
     }
   
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li {
+    #report .report-area .report-content .report-top ul li {
       margin: 0 5px;
     }
-  
-    #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"] {
-      width: 65%;
-    }
-  
-    #mu-subscription .mu-subscription-area .mu-subscription-form .mu-readmore-btn {
-      width: 30%;
-    }
-  
-    #mu-chef .mu-chef-area .mu-chef-content .mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a {
-      margin: 0 3px;
-      padding: 3px 0;
-      width: 30px;
-    }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      min-height: 220px;
-    }
+
+
   }
   @media (max-width: 480px) {
-    #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+    #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
       left: 5%;
       right: 5%;
       top: 15%;
     }
   
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery {
-      width: 50%;
-    }
-  
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
-      padding-top: 35.5%;
-    }
-  
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-top ul li {
+    #report .report-area .report-content .report-top ul li {
       margin-bottom: 10px;
     }
-  
-    #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single img {
+ 
+    #slider .slider-area .mu-top-slider .mu-top-slider-single img {
       width: 100%;
     }
 
-
   
-    #mu-slider .mu-slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+    #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
       display: none;
     }
   
-    #mu-slider .mu-slider-area .mu-top-slider .slick-prev, #mu-slider .mu-slider-area .mu-top-slider .slick-next {
+    #slider .slider-area .mu-top-slider .slick-prev, #slider .slider-area .mu-top-slider .slick-next {
       opacity: 0;
     }
-  
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li a {
+
+    #app-intro .app-intro-area .app-intro-content .app-intro li a {
       font-size: 14px;
       margin: 0 2px;
     }
+
   
     .mu-title {
       margin-bottom: 0;
     }
   
-  
-    #mu-subscription .mu-subscription-area .mu-subscription-form input[type="text"] {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    #mu-subscription .mu-subscription-area {
-      padding: 0;
-      text-align: center;
-    }
-  
-    #mu-subscription .mu-subscription-area .mu-subscription-form .mu-readmore-btn {
-      width: auto;
-    }
-  
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery {
-      width: 100%;
-    }
-  
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
-      padding-top: 15.5%;
-    }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      min-height: 150px;
-    }
-  
-    .mu-news-single h3 {
-      font-size: 20px;
-      line-height: 25px;
-      margin-bottom: 20px;
-    }
-  
-    #mu-blog .mu-blog-area .mu-blog-pagination-area {
-      text-align: center;
-    }
-  
-    .mu-blog-details .mu-news-single > h2 {
-      font-size: 20px;
-      padding: 15px 15px;
-      line-height: 30px;
-    }
-  
     #respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
       width: 100%;
     }
-  
-    #mu-error .mu-error-area {
-      padding: 30px 20px 60px;
-    }
-  
-    #mu-error .mu-error-area p {
-      padding: 0;
-      font-size: 16px;
-    }
-  
-    #mu-error .mu-error-area h2 {
-      font-size: 130px;
-      line-height: 130px;
-    }
+
   
     #mu-map {
       height: 350px;
     }
-  
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
+
+
+    #app-intro .app-intro-area .app-intro-content .app-intro li {
       margin-bottom: 10px;
     }
-    .mu-blog-related-post .mu-blog-related-post-area {   
-      margin-top: 30px;   
-    }
+
   }
   @media (max-width: 360px) {
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-restaurant-menu li {
+    #app-intro .app-intro-area .app-intro-content .app-intro li {
       margin-bottom: 12px;
     }
   
-    #mu-about-us {
+    #rest-intro {
       padding: 100px 0 50px;
     }
   
-    #mu-restaurant-menu {
+    #app-intro {
       padding-bottom: 0px;
     }
-  
-    #mu-reservation .mu-reservation-area .mu-reservation-content {
+
+
+    #find-location .find-location-area .find-location-content {
       padding: 0;
     }
+
   
     .mu-title h2 {
       font-size: 28px;
@@ -982,21 +787,11 @@ body {
       padding: 100px 0 50px;
     }
   
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
-      padding-top: 22.5%;
-    }
-  
     #mu-footer .mu-footer-area .mu-footer-social a {
       font-size: 18px;
       margin: 5px;
       padding: 5px;
       width: 40px;
-    }
-  
-    .mu-news-single h3 {
-      font-size: 18px;
-      line-height: 22px;
-      padding: 0 10px;
     }
   
     .mu-comments-area .comments .commentlist li .reply-btn {
@@ -1014,58 +809,28 @@ body {
     .media-left, .media > .pull-left {
       padding-right: 0;
     }
-  
-    .mu-comments-area .comments .commentlist li .news-img {
-      margin-right: 10px;
-    }
+
   
     .mu-comments-area .comments .commentlist li .media-body p {
       font-size: 14px;
     }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      padding: 20% 0;
-    }
-  
-    #mu-error .mu-error-area h2 {
-      font-size: 80px;
-      line-height: 80px;
-    }
-  
-    #mu-error .mu-error-area p {
-      font-size: 14px;
-    }
-  
-    #mu-error .mu-error-area {
-      padding: 0 15px 30px;
-    }
-  
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
+
+
+    #app-intro .app-intro-area .app-intro-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left {
       height: 100px;
       width: 100px;
       margin-right: 10px;
       float: left;
     }
   
-    #mu-restaurant-menu .mu-restaurant-menu-area .mu-restaurant-menu-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
+    #app-intro .app-intro-area .app-intro-content .mu-tab-content-area .mu-menu-item-nav li .media .media-left a img {
       height: 100%;
       width: 100%;
     }
+
+
   
     #mu-map {
       height: 250px;
     }
   }
-  @media (max-width: 320px) {
-    #mu-gallery .mu-gallery-area .mu-gallery-content .mu-gallery-body .mu-single-gallery .mu-single-gallery-item .mu-single-gallery-info {
-      padding-top: 25.5%;
-    }
-  
-    #mu-blog-banner .mu-blog-banner-area {
-      padding: 25% 0;
-    }
-    .mu-news-single .mu-news-single-content .mu-meta-nav li {   
-      border-right: none;
-    }
-  }
-  
