@@ -1,12 +1,4 @@
-/** 
-  * Template Name: SpicyX
-  * Version: 1.0  
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
-
-  Custom JS
-  
+/*
 
   1. FIXED NAVBAR 
   2. TOP SLIDER
@@ -15,15 +7,14 @@
   5. SHEF SLIDER (SLICK SLIDER)
   6. TESTIMONIAL SLIDER (SLICK SLIDER)
   7. COUNTER
-  8. MIXIT FILTER (FOR GALLERY)
-  9. FANCYBOX (FOR PORTFOLIO POPUP VIEW) 
+  8. MIXIT FILTER (FOR GALLERY)!
+  9. FANCYBOX (FOR PORTFOLIO POPUP VIEW)!
   10. MENU SMOOTH SCROLLING
   11. HOVER DROPDOWN MENU
   12. SCROLL TOP BUTTON
   13. PRELOADER  
 
-  
-**/
+*/
 
 jQuery(function($){
 
@@ -75,7 +66,7 @@ jQuery(function($){
   /*  4. DATEPICKER
   /* ----------------------------------------------------------- */      
 
-    jQuery('#datepicker').datepicker();
+    //jQuery('#datepicker').datepicker();
 
   /* ----------------------------------------------------------- */
   /*  5. SHEF SLIDER (SLICK SLIDER)
@@ -137,27 +128,13 @@ jQuery(function($){
   /*  7. COUNTER
   /* ----------------------------------------------------------- */
 
+    /*
     jQuery('.counter').counterUp({
         delay: 10,
         time: 1000
     });
+    */
 
-  /* ----------------------------------------------------------- */
-  /*  8. MIXIT FILTER (FOR GALLERY) 
-  /* ----------------------------------------------------------- */  
-
-    jQuery(function(){
-      jQuery('#mixit-container').mixItUp();
-    });
-
-  /* ----------------------------------------------------------- */
-  /*  9. FANCYBOX (FOR PORTFOLIO POPUP VIEW) 
-  /* ----------------------------------------------------------- */ 
-      
-    jQuery(document).ready(function() {
-      jQuery(".fancybox").fancybox();
-    }); 
-	
   /* ----------------------------------------------------------- */
   /*  10. MENU SMOOTH SCROLLING
   /* ----------------------------------------------------------- */ 

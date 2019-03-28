@@ -1,12 +1,3 @@
-/*
-  Template Name: SpicyX
-  Author : MarkUps
-  Author URI: http://www.markups.io/
-  Version: 1.0
-  Tags: light, white, restaurant, multi page, landing page, custom-colors, Bootstrap, responsive, html5, css3, Sass, template, web template
-
-*/
-
 body {
     background-color: #ffffff;
     font-family: "Prata", serif;
@@ -18,7 +9,6 @@ body {
   .no-padding {
     padding: 0;
   }
-
 
   
   /* MODULES - Individual site components */
@@ -80,13 +70,13 @@ body {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    background-color: #85B8CB;
+    background-color: #253072;
   }
   .mu-main-navbar .mu-main-nav {
     font-family: "Open Sans", sans-serif;
   }
   .mu-main-navbar .mu-main-nav li a { /*네비바 글씨 색상*/
-    color: #fff;
+    color: rgb(170, 170, 170);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -110,14 +100,13 @@ body {
     height: 100%;
   }
   .mu-main-navbar .navbar-header .navbar-brand-small {
-    height: 20px;
-    margin-top: 16px;
+    height: 25px;
+    margin-top: 14px;
     width: 105px;
   }
     
   .mu-main-navbar .mu-main-nav li a:hover {  /*선택된 메뉴바 색*/
-    background-color: #FFF;
-    color: skyblue;
+    color: white;
   }
   
   .navbar-bg { /*아래로 내려가는 네비바 색*/
@@ -235,7 +224,7 @@ body {
     width: 100%;
   }
   #slider .slider-area .mu-top-slider .mu-top-slider-single:after {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /*메인 사진 위에 덮이는 색*/
     bottom: 0;
     content: "";
     left: 0;
@@ -262,12 +251,12 @@ body {
     line-height: 40px;
   }
   #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content .slider-title {
-    color: #fff;
+    color: #fff; /*메인화면 사진 위 숫자*/
     font-size: 70px;
     line-height: 90px;
   }
   #slider .slider-area .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
-    color: #fff;
+    color: #fff; /*메인화면 사진 위 글자*/
     font-size: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -284,7 +273,7 @@ body {
   #slider .slider-area .mu-top-slider .slick-prev,
   #slider .slider-area .mu-top-slider .slick-next {
     background-color: transparent;
-    border: 2px solid #888;
+    border: 2px solid #888; /*메인 사진 화살표 테두리*/
     height: 60px;
     top: 50%;
     width: 70px;
@@ -306,7 +295,7 @@ body {
   #slider .slider-area .mu-top-slider .slick-prev:hover::before, #slider .slider-area .mu-top-slider .slick-prev:focus::before,
   #slider .slider-area .mu-top-slider .slick-next:hover::before,
   #slider .slider-area .mu-top-slider .slick-next:focus::before {
-    color: #fff;
+    color: #fff; /*화살표 색깔*/
   }
   #slider .slider-area .mu-top-slider .slick-prev {
     left: 20px;
@@ -538,7 +527,7 @@ body {
    FOOTER SECTION
   ====================*/
   #mu-footer {
-    background-color: #444;
+    background-color: #666;
     display: inline;
     float: left;
     padding: 50px 0;
@@ -558,7 +547,7 @@ body {
     margin-bottom: 10px;
   }
   #mu-footer .mu-footer-area .mu-footer-social a {
-    background-color: #555;
+    background-color: #777;
     color: #fff;
     display: inline-block;
     font-size: 20px;
@@ -616,11 +605,13 @@ body {
     .mu-main-navbar .navbar-header .navbar-brand {
       height: 30px;
       width: 115px;
+      margin-left: 10px;
     }
   
     .mu-main-navbar .navbar-header .navbar-brand-small {
       height: 25px;
       margin-top: 13px;
+      margin-left: 10px;
       width: 110px;
     }
   
@@ -827,8 +818,6 @@ body {
       height: 100%;
       width: 100%;
     }
-
-
   
     #mu-map {
       height: 250px;
