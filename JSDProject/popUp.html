@@ -15,39 +15,30 @@
           z-index: 1;
       }
       #addressarea {
-          height: 26px;
-          /*
-          margin-top: 99px;
-          margin-left: 125px;
-          */
-          margin-top: 20%;
-          margin-left: 28%;
-          position: relative;
+          width: 46%;
+          height: 5.2%;
+          top: 20.6%;
+          left: 26%;
+          position: absolute;
           z-index: 2;
       }
       #addsubmit {
           background-color: transparent;
+          width: 12.3%;
+          height: 6%;
           border: 0;
-          /*
-          margin-top: 97px;
-          margin-left: 368px;
-          */
-          margin-top: 0%;
-          position: relative;
+          top: 20.2%;
+          left: 76%;
+          position: absolute;
           z-index: 2;
       }
   </style>
-
  </head>
  <body>
     <img id="bg" src="assets/img/popup/searchPopup.png">
-    <input type="text" id="addressarea" size="30" required>
-    <button type="submit" id="addsubmit" onclick="search()"><img src="assets/img/popup/search.png" width="60px" height="30px"></button>
+    <form method="" action="">
+        <input type="text" id="addressarea" required>
+        <input type="image" src="assets/img/popup/search.png" id="addsubmit">
+    </form>
  </body>
- <script>
-     function search() {
-         var address = document.getElementById("addressarea").value;
-         alert(address);
-     }
- </script>
 </html>

@@ -20,7 +20,19 @@
   <!-- *Main style sheet -->
   <link href="style.css" rel="stylesheet">
   <!-- *Layer PopUp sheet -->
-  <link href="assets/css/layer.css" rel="stylesheet">
+  <style>
+    #layer {
+      position: absolute;
+      display: block;
+      max-width: 100%;
+      /*
+      left: 50%;
+      margin-left: -20%;
+      margin-top: -244px;
+      */
+      visibility: hidden;
+    }
+  </style>
 
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
@@ -209,7 +221,7 @@
       <h2>위치 검색</h2>
     </div>
     <div class="find-location-content">
-      <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=500,height=500,toolbars=no,scrollbars=no'); return false;"><p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p></a>
+      <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=470,height=500,toolbars=no,scrollbars=no'); return false;"><p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p></a>
     </div>
 
   </section>
@@ -220,7 +232,7 @@
     <div class="title-speak">
       <h2>제보</h2>
       <div class="mu-speak-content">
-          <a onclick="showLayer('layer'); return false;" style="cursor:pointer">제보할 수 있는 팝업 창을 열까욥 ?!</a>
+          <a onclick="showLayer(); false;" style="cursor:pointer">제보할 수 있는 팝업 창을 열까욥 ?!</a>
       </div>
     </div>
     <div id="layer">
@@ -267,28 +279,10 @@
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- *Custom js -->
   <script src="assets/js/custom.js"></script>
-
-  <!-- Show Layer -->
-  <script>
-    function showLayer(el) {
-      var layer = document.getElementById("layer");
-      var temp = $('#' + el);
-
-      if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
-      else temp.css('top', '0px');
-      if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', temp.outerWidth()/2+'px');
-      else temp.css('left', '0px');
-
-      layer.style.visibility = "visible";
-    }
-
-    
-
-
-  </script>
+  <!-- *Show SearchPopup -->
+  <script src="assets/js/searchpopup.js"></script>
 
 </body>
-
 </html>
 
 
