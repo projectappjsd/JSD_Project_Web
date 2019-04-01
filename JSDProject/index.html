@@ -82,7 +82,7 @@
       <div class="mu-top-slider">
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="assets/img/slider/1.png" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <h2 class="slider-title">1</h2>
@@ -93,7 +93,7 @@
         <!-- / Top slider single slide -->
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/2.jpg" alt="img">
+          <img src="assets/img/slider/2.png" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <h2 class="slider-title">2</h2>
@@ -104,7 +104,7 @@
         <!-- / Top slider single slide -->
         <!-- Top slider single slide -->
         <div class="mu-top-slider-single">
-          <img src="assets/img/slider/3.jpg" alt="img">
+          <img src="assets/img/slider/3.png" alt="img">
           <!-- Top slider content -->
           <div class="mu-top-slider-content">
             <h2 class="slider-title">3</h2>
@@ -146,9 +146,9 @@
                 <!--이미지 슬라이더 (사진 수정 필요) -->
                 <div class="rest-intro-right">
                   <ul class="mu-abtus-slider">
-                    <li><img src="assets/img/rest-intro/abtus-img-1.png" alt="img"></li>
-                    <li><img src="assets/img/rest-intro/abtus-img-2.png" alt="img"></li>
-                    <li><img src="assets/img/rest-intro/abtus-img-6.png" alt="img"></li>
+                    <li><img src="assets/img/rest-intro/introduce1.png" alt="img"></li>
+                    <li><img src="assets/img/rest-intro/introduce2.png" alt="img"></li>
+                    <li><img src="assets/img/rest-intro/introduce3.png" alt="img"></li>
                   </ul>
                 </div>
               </div>
@@ -209,64 +209,22 @@
       <h2>위치 검색</h2>
     </div>
     <div class="find-location-content">
-      <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=400,height=400,toolbars=no,scrollbars=no'); return false;"><p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p></a>
+      <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=500,height=500,toolbars=no,scrollbars=no'); return false;"><p>위치 검색할 수 있는 팝업 창을 열까욥 ?!</p></a>
     </div>
 
   </section>
   <!-- End 위치검색 -->
 
   <!-- Start 제보 -->
-
   <section id="report">
     <div class="title-speak">
       <h2>제보</h2>
-    </div>
-    <div class="mu-speak-content">
-      <a href="#layer2" class="btn-example">제보할 수 있는 팝업 창을 열까욥 ?!</a>
-      <div class="dim-layer">
-        <div class="dimBg"></div>
-        <div id="layer2" class="pop-layer">
-          <div class="pop-container">
-            <div class="pop-conts">
-              <!--content //-->
-              <form>
-
-                <body>
-                  <br>
-                  <br>
-                  <hr>
-                  <div id="layer_imformation">
-                    <h3>
-                      <제보>
-                    </h3>
-                    <p>
-                      기재된 이메일로 제보 현황 안내 메일이 갑니다.
-                    </p>
-                  </div>
-
-                  <div id="layer_email">
-                    <p>이메일
-                      <input type="email" id="emailarea" required>
-                    </p>
-                  </div>
-
-                  <div id="layer_add">
-                    <p>주소&nbsp;
-                      <input type="text" id="addarea" required>
-                    </p>
-                  </div>
-
-                  <div class="btn-r">
-                    <input type="submit" id="submitarea" value="Submit">
-                    <a href="#" class="btn-layerClose">Close</a>
-                  </div>
-
-              </form>
-              <!--// content-->
-            </div>
-          </div>
-        </div>
+      <div class="mu-speak-content">
+          <a onclick="showLayer('layer'); return false;" style="cursor:pointer">제보할 수 있는 팝업 창을 열까욥 ?!</a>
       </div>
+    </div>
+    <div id="layer">
+      <img src="assets/img/popup/layerPopup.png" >
     </div>
 
   </section>
@@ -309,8 +267,25 @@
   <script type="text/javascript" src="assets/js/slick.js"></script>
   <!-- *Custom js -->
   <script src="assets/js/custom.js"></script>
-  <!-- *Layer PopUp js -->
-  <script src="assets/js/layerpopup.js"></script>
+
+  <!-- Show Layer -->
+  <script>
+    function showLayer(el) {
+      var layer = document.getElementById("layer");
+      var temp = $('#' + el);
+
+      if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
+      else temp.css('top', '0px');
+      if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', temp.outerWidth()/2+'px');
+      else temp.css('left', '0px');
+
+      layer.style.visibility = "visible";
+    }
+
+    
+
+
+  </script>
 
 </body>
 
