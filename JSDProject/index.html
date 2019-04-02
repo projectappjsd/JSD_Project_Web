@@ -19,20 +19,8 @@
   <link id="switcher" href="assets/css/default-theme.css" rel="stylesheet">
   <!-- *Main style sheet -->
   <link href="style.css" rel="stylesheet">
-  <!-- *Layer PopUp sheet -->
-  <style>
-    #layer {
-      position: absolute;
-      display: block;
-      max-width: 100%;
-      /*
-      left: 50%;
-      margin-left: -20%;
-      margin-top: -244px;
-      */
-      visibility: hidden;
-    }
-  </style>
+  <!-- *Layer PopUp -->
+  <link href="assets/css/layerPopup.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
@@ -232,13 +220,18 @@
     <div class="title-speak">
       <h2>제보</h2>
       <div class="mu-speak-content">
-          <a onclick="showLayer(); false;" style="cursor:pointer">제보할 수 있는 팝업 창을 열까욥 ?!</a>
+        <a onclick="showLayer(); return false;">제보할 수 있는 팝업 창을 열까욥 ?!</a>
+      </div>
+      <div id="layerArea">
+        <img id="layer" src="assets/img/popup/layerPopup.png" >
+        <form>
+          <input type="text" id="mailarea" required>
+          <input type="textarea" id="reportarea" required>
+          <input type="image" src="assets/img/popup/submit.png" id="sendReport">
+          <img src="assets/img/popup/close.png" id="closebtn" onclick="reportClose()">
+        </form>
       </div>
     </div>
-    <div id="layer">
-      <img src="assets/img/popup/layerPopup.png" >
-    </div>
-
   </section>
   <!-- End 제보 -->
 
@@ -280,7 +273,7 @@
   <!-- *Custom js -->
   <script src="assets/js/custom.js"></script>
   <!-- *Show SearchPopup -->
-  <script src="assets/js/searchpopup.js"></script>
+  <script src="assets/js/layerPopup.js"></script>
 
 </body>
 </html>

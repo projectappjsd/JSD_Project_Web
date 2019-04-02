@@ -1,0 +1,35 @@
+#layerArea {
+ position: fixed;
+ display: block;
+ max-width: 100%;
+ z-index: 9999999;
+ visibility: hidden;
+}
+#mailarea {
+ position: absolute;
+ top: 46%;
+ left: 38%;
+ width: 55.7%;
+}
+#reportarea {
+ position: absolute;
+ top: 55.5%;
+ left: 38%;
+ width: 55.7%;
+ height: 28%;
+}
+#sendReport {
+ position: absolute;
+ top: 88.7%;
+ left: 60%;
+ width: 16%;
+ height: 10%;
+}
+#closebtn {
+ position: absolute;
+ top: 88.7%;
+ left: 78%;
+ width: 16%;
+ height: 10%;
+ cursor: pointer;
+}
