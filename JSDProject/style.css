@@ -695,18 +695,8 @@ body {
       margin: 0 2px;
     }
 
-  
-    .mu-title {
-      margin-bottom: 0;
-    }
-  
     #respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
       width: 100%;
-    }
-
-  
-    #mu-map {
-      height: 350px;
     }
 
 
@@ -732,12 +722,6 @@ body {
     #find-location .find-location-area .find-location-content {
       padding: 0;
     }
-
-  
-    .mu-title h2 {
-      font-size: 28px;
-    }
-
   
     #mu-contact .mu-contact-area .mu-contact-content .mu-contact-right {
       text-align: center;
@@ -757,26 +741,9 @@ body {
       padding: 5px;
       width: 40px;
     }
-  
-    .mu-comments-area .comments .commentlist li .reply-btn {
-      font-size: 12px;
-      line-height: 12px;
-      padding: 5px 10px;
-      right: 8px;
-      top: 8px;
-    }
-  
-    .mu-comments-area .comments .commentlist .children {
-      margin-left: 0;
-    }
-  
+
     .media-left, .media > .pull-left {
       padding-right: 0;
-    }
-
-  
-    .mu-comments-area .comments .commentlist li .media-body p {
-      font-size: 14px;
     }
 
 
@@ -792,7 +759,4 @@ body {
       width: 100%;
     }
   
-    #mu-map {
-      height: 250px;
-    }
   }
