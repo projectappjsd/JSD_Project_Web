@@ -22,5 +22,8 @@ $(window).resize(function () {
 });
 
 function reportClose() {
+ document.getElementById("mailarea").value = "";
+ document.getElementById("reportarea").value = "";
+
  layerArea.style.visibility = "hidden";
 }

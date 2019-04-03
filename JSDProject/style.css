@@ -453,7 +453,7 @@ body {
   위치검색 SECTION
   ====================*/
   #find-location {
-    background-image: url(assets/img/slider/1.png);
+    background-image: url(assets/img/location/bg.png);
     display: inline;
     float: left;
     padding: 300px 0;
@@ -461,14 +461,22 @@ body {
     
   }
 
-  #find-location .title-location h2{
-    color: #fff;
-    text-align: center;
-}
-
   #find-location .find-location-content{
     color: #fff;
-   text-align: center;
+    text-align: center;
+  }
+
+  #locationIcon {
+    margin-top: -13%;
+    width: 200px;
+  }
+  #locationMain {
+    margin-top: 1.2%;
+    height: 35px;
+  }
+  #locationSub {
+    margin-top: 1%;
+    height: 23px;
   }
 
 
@@ -476,7 +484,7 @@ body {
 제보 SECTION
 ====================*/
 #report {
-  background-image: url(assets/img/slider/2.png);
+  background-image: url(assets/img/report/bg.png);
   display: inline;
   float: left;
   padding: 300px 0;
@@ -484,16 +492,21 @@ body {
   
 }
 
-#report .title-speak h2{
-    color: #fff;
-    text-align: center;
+#report .mu-speak-content{
+  text-align: center;
 }
 
-
-#report .mu-speak-content{
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
+#reportIcon {
+  margin-top: -11%;
+  width: 200px;
+}
+#reportMain {
+  margin-top: 1.2%;
+  height: 35px;
+}
+#reportSub {
+  margin-top: 1%;
+  height: 23px;
 }
 
   /*==================

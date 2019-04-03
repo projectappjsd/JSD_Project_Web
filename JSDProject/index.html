@@ -207,8 +207,10 @@
   <section id="find-location">
     <div class="find-location-content">
       <a href="popUp.html" onclick="window.open(this.href, 'popup', 'width=470,height=500,toolbars=no,scrollbars=no'); return false;">
-      <img src="assets/img/location/btn.png">
-      </a>
+        <img id="locationIcon" src="assets/img/location/icon.png"><br>
+        <img id="locationMain" src="assets/img/location/mainText.png">
+      </a><br>
+      <img id="locationSub" src="assets/img/location/subText.png">
     </div>
 
   </section>
@@ -217,7 +219,11 @@
   <!-- Start 제보 -->
   <section id="report">
       <div class="mu-speak-content">
-        <a onclick="showLayer(); return false;"><img src="assets/img/report/btn.png"></a>
+        <a onclick="showLayer(); return false;" onmouseover="style='cursor:pointer'">
+          <img id="reportIcon" src="assets/img/report/icon.png"><br>
+          <img id="reportMain" src="assets/img/report/mainText.png">
+        </a><br>
+        <img id="reportSub" src="assets/img/report/subText.png"></a>
       </div>
       <div id="layerArea">
         <img id="layer" src="assets/img/popup/layerPopup.png" >
