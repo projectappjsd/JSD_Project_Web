@@ -453,7 +453,7 @@ body {
   위치검색 SECTION
   ====================*/
   #find-location {
-    background-color: pink;
+    background-image: url(assets/img/slider/1.png);
     display: inline;
     float: left;
     padding: 300px 0;
@@ -476,7 +476,7 @@ body {
 제보 SECTION
 ====================*/
 #report {
-  background-color: gold;
+  background-image: url(assets/img/slider/2.png);
   display: inline;
   float: left;
   padding: 300px 0;
